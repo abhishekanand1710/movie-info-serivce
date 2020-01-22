@@ -1,5 +1,8 @@
 pipeline {
     agent any
+    tools {
+        jdk 'jdk8'
+    }
     options {
         skipStagesAfterUnstable()
     }
