@@ -31,7 +31,7 @@ pipeline {
         }
         stage('Deliver') {
             steps {
-                sh './deliver.sh'
+                sh 'java -jar target/${NAME}-${VERSION}.jar'
             }
         }
     }
